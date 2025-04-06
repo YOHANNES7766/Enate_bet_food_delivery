@@ -20,15 +20,29 @@ A modern food delivery application built with Flutter.
 
 ## Screenshots
 
-To add screenshots:
+Here are some screenshots of the key features of our app:
 
-1. Take screenshots of your app's main screens
-2. Place them in the `assets/screenshots` directory
-3. Link them in this README using the following format:
+### Menu Screen
+<img src="assets/screenshots/menu screen.png" width="250" alt="Menu Screen">
 
-```markdown
-<img src="assets/screenshots/home_screen.png" width="250" alt="Home Screen">
-```
+### Cart
+<img src="assets/screenshots/cart.png" width="250" alt="Cart Screen">
+
+### Favorites
+<img src="assets/screenshots/favorite.png" width="250" alt="Favorites Screen">
+
+### Profile
+<img src="assets/screenshots/profile.png" width="250" alt="Profile Screen">
+
+### Personal Information
+<img src="assets/screenshots/personal information.png" width="250" alt="Personal Information Screen">
+
+### Settings
+<img src="assets/screenshots/setting.png" width="250" alt="Settings Screen">
+
+### Navigation Menu
+<img src="assets/screenshots/humberger menu.png" width="250" alt="Navigation Menu">
+<img src="assets/screenshots/humberger menu bar.png" width="250" alt="Extended Navigation Menu">
 
 ## Getting Started
 
