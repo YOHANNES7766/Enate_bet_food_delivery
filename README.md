@@ -55,8 +55,6 @@ Here are some screenshots of the key features of our app:
 
 - Flutter
 - Dart
-- Firebase (for backend)
-- REST APIs
 
 ## Contributing
 
