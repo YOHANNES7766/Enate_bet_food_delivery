@@ -23,4 +23,9 @@ class CategoriesService {
       Category(name: 'Fried Rice', icon: 'assets/icons/fried_rice.png'),
     ];
   }
+
+  Future<List<Category>> getRecommendedCategories() async {
+    await Future.delayed(const Duration(milliseconds: 500));
+    return [];
+  }
 }

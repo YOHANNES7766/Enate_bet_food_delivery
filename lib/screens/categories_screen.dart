@@ -11,14 +11,17 @@ class CategoriesScreen extends StatelessWidget {
     final results = await Future.wait([
       _categoriesService.getCategories(),
       _categoriesService.getPopularCategories(),
+      _categoriesService.getRecommendedCategories(),
     ]);
 
     final allCategories = results[0];
     final popularCategories = results[1];
+    final recommendedCategories = results[2];
 
     return {
       'all': allCategories,
       'popular': popularCategories,
+      'recommended': recommendedCategories,
     };
   }
 
@@ -47,13 +50,27 @@ class CategoriesScreen extends StatelessWidget {
 
           final allCategories = snapshot.data?['all'] ?? [];
           final popularCategories = snapshot.data?['popular'] ?? [];
+          final recommendedCategories = snapshot.data?['recommended'] ?? [];
 
-          if (allCategories.isEmpty && popularCategories.isEmpty) {
+          if (allCategories.isEmpty &&
+              popularCategories.isEmpty &&
+              recommendedCategories.isEmpty) {
             return const Center(child: Text('No categories available'));
           }
 
           return ListView(
             children: [
+              if (recommendedCategories.isNotEmpty) ...[
+                const Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'Recommended Categories',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ...recommendedCategories
+                    .map((category) => _buildCategoryTile(context, category)),
+              ],
               if (popularCategories.isNotEmpty) ...[
                 const Padding(
                   padding: EdgeInsets.all(16.0),
