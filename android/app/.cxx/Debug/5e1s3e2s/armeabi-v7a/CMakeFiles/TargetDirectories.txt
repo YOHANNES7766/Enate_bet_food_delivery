@@ -1,0 +1,2 @@
+/home/jo/Enate_bet_food_delivery/android/app/.cxx/Debug/5e1s3e2s/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/jo/Enate_bet_food_delivery/android/app/.cxx/Debug/5e1s3e2s/armeabi-v7a/CMakeFiles/rebuild_cache.dir
